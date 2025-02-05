@@ -24,6 +24,15 @@ public class Main {
         boolean success = new File(strPath + "\\SubPastaTeste").mkdir();
         System.out.println("Directory created: " + success);
 
+        System.out.println("Enter a file path: ");
+        String strFilePath = sc.nextLine();
+
+        File pathFile = new File(strFilePath);
+
+        System.out.println("GetName: " + pathFile.getName());
+        System.out.println("GetParent: " + pathFile.getParent());
+        System.out.println("GetPath: " + pathFile.getPath());
+
         sc.close();
     }
 }
